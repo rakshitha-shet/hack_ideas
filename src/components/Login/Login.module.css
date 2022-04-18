@@ -1,0 +1,35 @@
+.loginForm{
+    position: relative;
+    top:35vh;
+    left:42vw;
+    margin:auto;
+ }
+ 
+.empIdInput{
+    width:15vw;
+    height:5vh;
+    font-family: inherit;
+    font-size: large;
+    text-align: center;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid grey;
+}
+
+
+.loginBtn{
+    width: 5vw;
+    min-width: 3vw;
+    height: 5vh;
+    min-height: 5vh;
+    background-color: #16a085;
+    color: white;
+    padding: 7px 20px;
+    margin-left: 1vw;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat;
+    border-radius: 4px;
+    text-transform: uppercase;
+}

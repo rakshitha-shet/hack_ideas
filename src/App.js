@@ -1,7 +1,9 @@
-import './App.css';
+import Login from './components/Login/Login';
 
-function App() {
-  return ( <h1> Hack Ideas</h1>);
+export default function App() {
+  return (
+    <>
+      <Login/>
+    </>
+  );
 }
-
-export default App;
