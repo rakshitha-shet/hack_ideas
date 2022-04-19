@@ -1,12 +1,11 @@
 .formContainer{
-    background-color: white;
-    width:50vw;
-    height: 45vh;
-    margin: auto;
+    margin: 5vw;
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    border:2px dashed grey;
+    width:70%;
 }
 
 .formElement{
@@ -14,24 +13,35 @@
     margin:2vw;
 }
 .formElement input{
-    width:20vw;
+    width:15vw;
     height: 4vh;
-    font-family: Montserrat;
+    font-family: inherit;
     font-size: 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid grey;
 }
 
 .formElement textarea{
     resize: none;
-    width:40vw;
+    width:15vw;
     height:10vh;
-    font-family: Montserrat;
+    font-family: inherit;
     font-size: 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid grey;
 }
 .submit{
-    width:5vw;
     height:3vh;
-    font-family: Montserrat;
-    background-color: aqua;
+    font-family: inherit;
     font-weight: bold;
     margin-left: 2vw;
+    background-color: #16a085;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
 }

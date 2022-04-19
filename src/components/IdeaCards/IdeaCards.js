@@ -48,9 +48,11 @@ const IdeaCards = ({updated}) => {
                     <option value={UPVOTE_COUNT}>No of Votes</option>
                 </select>
             </div>
-            {data && data.map((idea) => {
-                return <Card key={idea.id} idea={idea} updateVote={updateVote} />
-            })}
+            <div className={styles.cardContainer}>
+                {data && data.map((idea) => {
+                    return <Card key={idea.id} idea={idea} updateVote={updateVote} />
+                })}
+            </div>
         </>
     );
 }

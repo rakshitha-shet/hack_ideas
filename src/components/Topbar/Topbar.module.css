@@ -1,8 +1,12 @@
 .topBar{
-    position: static;
+    position: fixed;
     width: 100%;
     box-shadow: 0 1px 5px rgb(0 0 0 / 5%);
     z-index: 9;
+    top: 0;
+    height: 3vh;
+    background: white;
+    padding: 15px;
 }
 .signOutBtn{
     margin-right: 2vw;
@@ -11,7 +15,7 @@
     color: white;
     padding: 7px 20px;
     cursor: pointer;
-    font-family: Montserrat;
+    font-family: inherit;
     border-radius: 4px;
     text-transform: uppercase;
 }

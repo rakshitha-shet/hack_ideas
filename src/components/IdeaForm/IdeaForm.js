@@ -52,7 +52,7 @@ const IdeaForm = ({updateCountValue}) => {
                     <textarea name="description" value={description} onChange={(e) => setDescription(e.target.value)} required />
                 </div>
 
-                <button type="submit" className={styles.submit}>Submit</button>
+                <button type="submit" className={styles.submit}>Create Idea</button>
             </form>
         </div>
     );

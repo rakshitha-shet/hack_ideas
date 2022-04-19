@@ -5,6 +5,7 @@ import styles from "./Card.module.css";
 
 const Card = ({idea, updateVote}) => {
     const [updateUpVote, setUpdateUpVote]  = useState(idea.upvote)
+    const ideaTimeStamp = new Date(idea.createdAt).toLocaleDateString('en-us', { hour: 'numeric', minute: 'numeric', year:"numeric", month:"short", day:"numeric"});
 
     const handleClick = () => {
         const func = async () => {
@@ -18,20 +19,20 @@ const Card = ({idea, updateVote}) => {
         }
         func();
     }
-
     return(
         <div className={styles.card}>
-            <div>
-                <p>{idea.description}</p>
+            <div className={styles.title}>
+                <p>{idea.title}</p>
+                <p className={styles.timeStamp}>{ideaTimeStamp}</p>
             </div>
             <div>
-                <span>{idea.title}</span>
-                <h3>{`#${idea.tag.join(", #")}`}</h3>
+                <p>{idea.description}</p>
+                <p className={styles.tag}>{`#${idea.tag.join(", #")}`}</p>
             </div>
             <button className={styles.vote} onClick={handleClick}>
                 <img src={upVoteIcon} width="30px" />
             </button> 
-            <span>{updateUpVote}</span>
+            <span>Vote : {updateUpVote}</span>
         </div>
     );
 }

@@ -1,0 +1,12 @@
+.leftWall{
+    width:60%;
+    float: left;
+    background-color: rgb(244, 244, 244);
+    margin-top: 5vh;
+}
+.rightWall{
+    width:40%;
+    float:right;
+    position: fixed;
+    right: 0;
+}
