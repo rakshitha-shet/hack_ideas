@@ -1,0 +1,37 @@
+.formContainer{
+    background-color: white;
+    width:50vw;
+    height: 45vh;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formElement{
+    width:10vw;
+    margin:2vw;
+}
+.formElement input{
+    width:20vw;
+    height: 4vh;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.formElement textarea{
+    resize: none;
+    width:40vw;
+    height:10vh;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.submit{
+    width:5vw;
+    height:3vh;
+    font-family: inherit;
+    background-color: aqua;
+    font-weight: bold;
+    margin-left: 2vw;
+}
