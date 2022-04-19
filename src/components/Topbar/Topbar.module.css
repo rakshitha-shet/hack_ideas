@@ -1,0 +1,28 @@
+.topBar{
+    position: static;
+    width: 100%;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 5%);
+    z-index: 9;
+}
+.signOutBtn{
+    margin-right: 2vw;
+    float: right;
+    background-color: #16a085;
+    color: white;
+    padding: 7px 20px;
+    cursor: pointer;
+    font-family: Montserrat;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.topBarTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 42px;
+    font-family: Orbitron;
+    margin-left: 2vw;
+}

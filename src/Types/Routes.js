@@ -1,6 +1,6 @@
 export const RoutesTypes = {
     ROUTES: {
-      LOGIN: "/login",
-      HOME: "/"
+      LOGIN: "/",
+      HOME: "/home"
     }
 };
