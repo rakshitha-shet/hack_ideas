@@ -16,7 +16,7 @@
 .formElement input{
     width:20vw;
     height: 4vh;
-    font-family: inherit;
+    font-family: Montserrat;
     font-size: 1rem;
 }
 
@@ -24,13 +24,13 @@
     resize: none;
     width:40vw;
     height:10vh;
-    font-family: inherit;
+    font-family: Montserrat;
     font-size: 1rem;
 }
 .submit{
     width:5vw;
     height:3vh;
-    font-family: inherit;
+    font-family: Montserrat;
     background-color: aqua;
     font-weight: bold;
     margin-left: 2vw;

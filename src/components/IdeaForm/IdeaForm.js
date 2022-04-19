@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { postData } from '../../utils/fetchData';
 import styles from "./IdeaForm.module.css";
 
-const IdeaForm = () => {
+const IdeaForm = ({updateCountValue}) => {
     const [idea, setIdea] = useState("");
     const [tag, setTag] = useState("");
     const [description, setDescription] = useState("");
@@ -31,6 +31,7 @@ const IdeaForm = () => {
         setIdea("");
         setTag("");
         setDescription("");
+        updateCountValue();
     }
 
     return(

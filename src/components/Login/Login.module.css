@@ -8,14 +8,13 @@
 .empIdInput{
     width:15vw;
     height:5vh;
-    font-family: inherit;
+    font-family: Montserrat;
     font-size: large;
     text-align: center;
     outline: none;
     border:none;
     border-bottom: 2px solid grey;
 }
-
 
 .loginBtn{
     width: 5vw;
