@@ -1,0 +1,17 @@
+.sortLabel{
+    font-family: Montserrat;
+    font-size: large;
+    text-align: center;
+    color: white;
+}
+.sortContainer{
+    float: right;
+    margin-right: 5vw;
+    border: 2px dashed white;
+    padding: 0.5vw;
+}
+.dropdown{
+    font-family: Montserrat;
+    font-size: medium;
+    padding: 0.25vw;
+}
