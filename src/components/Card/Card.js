@@ -26,7 +26,7 @@ const Card = ({idea, updateVote}) => {
                 <p className={styles.timeStamp}>{ideaTimeStamp}</p>
             </div>
             <div>
-                <p>{idea.description}</p>
+                <p className={styles.description} title={idea.description}>{idea.description}</p>
                 <p className={styles.tag}>{`#${idea.tag.join(", #")}`}</p>
             </div>
             <button className={styles.vote} onClick={handleClick}>

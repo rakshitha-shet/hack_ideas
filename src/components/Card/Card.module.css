@@ -23,7 +23,13 @@
 .timeStamp{
     font-size: small;
     float: right;
+    margin-left: 1vw;
 }
 .tag{
     font-size: small;
+}
+.description{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

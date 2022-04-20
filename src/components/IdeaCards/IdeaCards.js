@@ -49,7 +49,7 @@ const IdeaCards = ({updated}) => {
                 </select>
             </div>
             <div className={styles.cardContainer}>
-                {data && data.map((idea) => {
+                {data && data.sort((a,b) => (new Date(b.createdAt) - new Date(a.createdAt))).map((idea) => {
                     return <Card key={idea.id} idea={idea} updateVote={updateVote} />
                 })}
             </div>
