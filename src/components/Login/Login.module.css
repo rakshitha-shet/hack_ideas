@@ -1,23 +1,20 @@
-.loginForm{
-    position: relative;
-    top:35vh;
-    left:42vw;
-    margin:auto;
- }
- 
-.empIdInput{
-    width:15vw;
-    height:5vh;
+.loginForm {
+    margin-bottom: 20px;
+}
+
+.empIdInput {
+    width: 15vw;
+    height: 5vh;
     font-family: inherit;
     font-size: large;
     text-align: center;
     outline: none;
-    border:none;
+    border: none;
     border-bottom: 2px solid grey;
     background: transparent;
 }
 
-.loginBtn{
+.loginBtn {
     width: 5vw;
     min-width: 3vw;
     height: 5vh;
@@ -31,4 +28,65 @@
     font-family: inherit;
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+.leftWall {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    background: #5433FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #A5FECB, #20BDFF, #5433FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A5FECB, #20BDFF, #5433FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.rightWall {
+    width: 50%;
+    float: right;
+}
+
+.formConatiner {
+    box-shadow: 0 2px 14px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding: 50px;
+    top: 35%;
+    position: fixed;
+    left: 60%;
+}
+.loginHeading{
+    color: #1b2436;
+    font-weight: 600;
+    font-size: 1.714em;
+    line-height: 1.5;
+    opacity: .8;
+}
+.loginHero{
+    font-family: Orbitron;
+    position: fixed;
+    top: 40%;
+    left: 7%;
+    font-size: 5vw;
+}
+@media (orientation: portrait) {
+    .leftWall {
+        width: 100%;
+        height: 50vh;
+    }
+    .rightWall {
+        width: 100%;
+    }
+    .formConatiner{
+        bottom: 15%;
+        left: 20%;
+        top:unset;
+    }
+    .loginBtn{
+        width: auto;
+    }
+    .loginHero{
+        top: 20%;
+        left: 20%;
+    }
 }

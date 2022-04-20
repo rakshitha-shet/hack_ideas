@@ -1,7 +1,7 @@
 .formContainer{
     margin: 5vw;
-    border-radius: 1rem;
-    padding: 2rem;
+    border-radius: 1vw;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     border:2px dashed grey;
@@ -16,7 +16,7 @@
     width:15vw;
     height: 4vh;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1vw;
     border: none;
     outline: none;
     background: transparent;
@@ -28,7 +28,7 @@
     width:15vw;
     height:10vh;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1vw;
     border: none;
     outline: none;
     background: transparent;
@@ -44,4 +44,13 @@
     cursor: pointer;
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+@media (orientation: portrait) {
+    .formContainer{
+        margin-top: 10vh;
+    }
+    .submit{
+        width: auto;
+    }
 }

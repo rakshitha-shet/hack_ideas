@@ -13,11 +13,11 @@ const Home = () => {
 
     return (<>
         <Topbar />
-        <div className={styles.rightWall}>
-            <IdeaForm updateCountValue={updateCountValue} />
-        </div>
         <div className={styles.leftWall}>
             <IdeaCards updated={updateCount} />
+        </div>
+        <div className={styles.rightWall}>
+            <IdeaForm updateCountValue={updateCountValue} />
         </div>
     </>);
 }

@@ -10,11 +10,21 @@ const Login = () => {
         navigate(RoutesTypes.ROUTES.HOME);
     }
 
-    return(
-        <form className={styles.loginForm} onSubmit={sudmitHandler}>
-            <input type="number" placeholder="Employee ID" className={styles.empIdInput} max="1000" min="1" step="1" required />
-            <button type="submit" className={styles.loginBtn}>Login</button>
-        </form>
+    return (
+        <>
+            <div className={styles.leftWall}>
+                <h1 className={styles.loginHero}>HACKATHON</h1>
+            </div>
+            <div className={styles.rightWall}>
+                <div className={styles.formConatiner}>
+                    <h3 className={styles.loginHeading}>Welcome! <br/> Sign in to continue</h3>
+                    <form className={styles.loginForm} onSubmit={sudmitHandler}>
+                        <input type="number" placeholder="Employee Id" className={styles.empIdInput} max="1000" min="1" step="1" required />
+                        <button type="submit" className={styles.loginBtn}>Login</button>
+                    </form>
+                </div>
+            </div>
+        </>
     );
 }
 
