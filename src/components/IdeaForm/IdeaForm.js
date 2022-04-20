@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { postData } from '../../utils/fetchData';
 import styles from "./IdeaForm.module.css";
 
-const IdeaForm = ({updateCountValue}) => {
+const IdeaForm = ({updateCountValue, empId}) => {
     const [idea, setIdea] = useState("");
     const [tag, setTag] = useState("");
     const [description, setDescription] = useState("");
@@ -16,7 +16,8 @@ const IdeaForm = ({updateCountValue}) => {
             tag: ("tech feature "+tag).split(" "),
             description: description,
             upvote: 0,
-            createdAt: new Date()
+            createdAt: new Date(),
+            empId: empId
         });
     }
 

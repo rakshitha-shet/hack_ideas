@@ -1,12 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import { RoutesTypes } from "../../Types/Routes";
 import styles from "./Topbar.module.css";
 
-const Topbar = () => {
-    const navigate = useNavigate();
+const Topbar = ({setEmpId}) => {
 
     const handleSignOut = () => {
-        navigate(RoutesTypes.ROUTES.LOGIN);
+        setEmpId("");
     }
 
     return(<>
