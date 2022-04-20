@@ -1,13 +1,15 @@
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { postData } from '../../utils/fetchData';
+import { EmpIdContext }  from "../../App";
 import styles from "./IdeaForm.module.css";
 
-const IdeaForm = ({updateCountValue, empId}) => {
+const IdeaForm = ({updateCountValue}) => {
     const [idea, setIdea] = useState("");
     const [tag, setTag] = useState("");
     const [description, setDescription] = useState("");
     const [data, setData] = useState();
+    const empId = useContext(EmpIdContext);
 
     const submitHandler = (e) => {
         e.preventDefault();

@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { getData } from '../../utils/fetchData';
+import { EmpIdContext }  from "../../App";
 import Card from '../Card/Card';
 import styles from "./IdeaCards.module.css";
 
@@ -7,7 +8,8 @@ const IdeaCards = ({updated}) => {
     const [data, setData] = useState([]);
     const [updateDataOnVote, setupdateDataOnVote] = useState(0);
     const TIMESTAMP_CREATED = "TIMESTAMP_CREATED";
-    const UPVOTE_COUNT = "UPVOTE_COUNT";
+    const UPVOTE_COUNT = "UPVOTE_COUNT";    
+    const empId = useContext(EmpIdContext);
 
     useEffect(() => {
         const func = async () => {
@@ -49,7 +51,7 @@ const IdeaCards = ({updated}) => {
                 </select>
             </div>
             <div className={styles.cardContainer}>
-                {data && data.sort((a,b) => (new Date(b.createdAt) - new Date(a.createdAt))).map((idea) => {
+                {data && data.map((idea) => {
                     return <Card key={idea.id} idea={idea} updateVote={updateVote} />
                 })}
             </div>

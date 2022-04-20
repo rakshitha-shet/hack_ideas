@@ -9,7 +9,6 @@
     border-radius: 4px;
   
 }
-  
 .vote{
     background: transparent;
     border: none;
@@ -23,7 +22,6 @@
 .timeStamp{
     font-size: small;
     float: right;
-    margin-left: 1vw;
 }
 .tag{
     font-size: small;

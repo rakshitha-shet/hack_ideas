@@ -9,4 +9,14 @@
     float:right;
     position: fixed;
     right: 0;
+    margin-top: 10vh;
+}
+.profileTitle{
+    margin-left: 12vw;
+}
+.profile{
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
 }

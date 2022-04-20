@@ -4,7 +4,7 @@ import upVoteIcon from "../../assets/images/upvote.png"
 import styles from "./Card.module.css";
 
 const Card = ({idea, updateVote}) => {
-    const [updateUpVote, setUpdateUpVote]  = useState(idea.upvote)
+    const [updateUpVote, setUpdateUpVote]  = useState(idea.upvote);
     const ideaTimeStamp = new Date(idea.createdAt).toLocaleDateString('en-us', { hour: 'numeric', minute: 'numeric', year:"numeric", month:"short", day:"numeric"});
 
     const handleClick = () => {
@@ -22,8 +22,9 @@ const Card = ({idea, updateVote}) => {
     return(
         <div className={styles.card}>
             <div className={styles.title}>
-                <p>{idea.title}</p>
+                <p>Created By  - Employee ID: {idea.empId}</p>
                 <p className={styles.timeStamp}>{ideaTimeStamp}</p>
+                <p>{idea.title}</p>
             </div>
             <div>
                 <p className={styles.description} title={idea.description}>{idea.description}</p>
